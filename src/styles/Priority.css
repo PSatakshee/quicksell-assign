@@ -1,0 +1,108 @@
+.priority-board {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+}
+
+.priority-column {
+  width: 18%;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 0 10px;
+}
+
+.priority-container {
+  display: flex;
+  align-items: center;
+}
+
+.priority-container img {
+  margin-right: 10px;
+}
+
+.priority-container h3 {
+  margin: 0 10px;
+}
+
+.priority-column h2 {
+  text-align: center;
+  color: #333;
+}
+
+.icon-container {
+  margin-left: auto;
+  display: flex;
+}
+
+.priority-card {
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 10px;
+  margin: 10px 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.card-title {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.card-content {
+  color: #666;
+}
+
+.card-type {
+  font-size: 12px;
+  color: #999;
+  margin-top: 10px;
+}
+
+.feature-btn {
+  align-self: flex-start;
+  margin-top: 10px;
+  padding: 5px 8px;
+  border-radius: 5px;
+  background: #fff;
+  border: 1px solid #ccc;
+}
+
+@media (max-width: 1024px) {
+  .priority-board {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .priority-column {
+      width: 80%;
+      margin-bottom: 20px;
+  }
+
+  .priority-container h3 {
+      font-size: 18px;
+  }
+
+  .priority-card {
+      padding: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .priority-board {
+      padding: 10px;
+  }
+
+  .priority-column {
+      width: 90%;
+  }
+
+  .priority-container h3 {
+      font-size: 16px;
+  }
+
+  .priority-card {
+      padding: 10px;
+  }
+}
